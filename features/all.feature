@@ -7,7 +7,7 @@ Feature: Source files must be present, compilable and output correct information
 		And a file named "../../trap.c" should exist
 		And a file named "../../user.h" should exist
 		And a file named "../../usys.S" should exist
-		And I run `bash -c 'cp ../../syscall.c ../../syscall.h ../../sysproc.c ../../trap.c ../../user.h ../../usys.S ../../xv6-public/ '`
+		And I run `bash -c 'cp ../../peep.c ../../syscall.c ../../syscall.h ../../sysproc.c ../../trap.c ../../user.h ../../usys.S ../../xv6-public/ '`
 		Then 10 points are awarded
 
 	Scenario: xv6 must be compilable with no errors
